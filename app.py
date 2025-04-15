@@ -66,8 +66,6 @@ class Player:
     def win(self, amount):
         self.chips += amount * 2
 
-# --- Stylish GUI Game with Instructions ---
-
 class BlackjackGUI:
     def __init__(self, master):
         self.master = master
@@ -122,15 +120,15 @@ class BlackjackGUI:
     def show_instructions(self):
         instructions = (
             "🎰 Welcome to Blackjack! Here's how to play:\n\n"
-            "1. 🪙 Place your bet (default is 10 chips).\n"
-            "2. 🧑‍💼 You and the dealer are dealt cards.\n"
-            "3. 🎯 Press 'Hit' to draw a card.\n"
-            "4. 🛑 Press 'Stand' to end your turn.\n"
-            "5. 🃏 The dealer will draw until they reach 17 or higher.\n"
-            "6. 🏆 Closest to 21 without going over wins!\n"
-            "7. 💀 Over 21? That’s a bust – you lose the round.\n"
-            "8. ⚖️ Ties return your bet. Winning doubles your bet!\n\n"
-            "💡 Tip: Aces count as 11 or 1 – whichever helps most.\n"
+            "1. Place your bet (default is 10 chips).\n"
+            "2. You and the dealer are dealt cards.\n"
+            "3. Press 'Hit' to draw a card.\n"
+            "4. Press 'Stand' to end your turn.\n"
+            "5. The dealer will draw until they reach 17 or higher.\n"
+            "6. Closest to 21 without going over wins!\n"
+            "7. Over 21? That’s a bust – you lose the round.\n"
+            "8. Ties return your bet. Winning doubles your bet!\n\n"
+            "Tip: Aces count as 11 or 1 – whichever helps most.\n"
             "\nHave fun & good luck!"
         )
         messagebox.showinfo("📘 How to Play Blackjack", instructions)
